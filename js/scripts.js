@@ -5,7 +5,18 @@
 */
 //
 // Scripts
-// 
+//
+const myImage = document.querySelector('img');
+
+myImage.onclick = () => {
+  const mySrc = myImage.getAttribute('src');
+  if (mySrc === 'assets/img/profile_pic.jpeg') {
+    myImage.setAttribute('src','assets/img/turtle2.jpg');
+  } else {
+    myImage.setAttribute('src','assets/img/profile_pic.jpeg');
+  }
+}
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
